@@ -24,7 +24,7 @@
         content: "";
         width: 50%;
         height: 100px;
-        background-color: @brand-primary;
+        background-color: @navbar-worldskills-bg-left;
         z-index: -1;
     }
     &:after {
@@ -34,12 +34,12 @@
         content: "";
         width: 50%;
         height: 100px;
-        background-color: @brand-success;
+        background-color: @navbar-worldskills-bg-right;
         z-index: -1;
     }
 
     .container {
-        background-color: @brand-info;
+        background-color: @navbar-worldskills-bg-center;
         position: relative;
         &:before {
             position: absolute;
@@ -47,7 +47,7 @@
             left: -@navbar-padding-horizontal;
             width: 700px;
             height: 0;
-            border-top: 100px solid @brand-primary;
+            border-top: 100px solid @navbar-worldskills-bg-left;
             border-right: 100px solid transparent;
         }
         &:after {
@@ -56,7 +56,7 @@
             right: 0;
             width: 200px;
             height: 0;
-            border-top: 100px solid @brand-success;
+            border-top: 100px solid @navbar-worldskills-bg-right;
             border-left: 100px solid transparent;
         }
     }
@@ -64,7 +64,7 @@
     margin-bottom: 30px;
     min-height: @navbar-worldskills-height;
 
-    background-color: @brand-info;
+    background-color: @navbar-worldskills-bg-center;
     border-bottom: 0;
 
     .navbar-brand {

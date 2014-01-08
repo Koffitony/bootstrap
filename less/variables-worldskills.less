@@ -2,17 +2,30 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #0a3f5c;
-@brand-success:         #94c54e;
-@brand-warning:         #f7a63e;
-@brand-danger:          #a51f3a;
-@brand-info:            #5bb3e0;
+@brand-red-dark: #A0213C;
+@brand-red-light: #E1516B;
+@brand-green-dark: #1C5951;
+@brand-green-light: #98C25A;
+@brand-blue-dark: #11405A;
+@brand-blue-light: #63B5DD;
+@brand-yellow-dark: #F3A44D;
+@brand-yellow-light: #F9D76C;
+@brand-black: #221F20;
+@brand-grey-dark: #58585A;
+@brand-grey: #818285;
+@brand-grey-light: #A7A9AC;
+
+@brand-primary: lighten(@brand-blue-dark, 10%);
+@brand-success: darken(@brand-green-light, 10%);
+@brand-warning: desaturate(darken(@brand-yellow-light, 20%), 5%);
+@brand-danger: desaturate(darken(@brand-red-light, 15%), 10%);
+@brand-info: darken(@brand-blue-light, 10%);
 
 
 // Links
 // -------------------------
 
-@link-color: lighten(@brand-primary, 20%);
+@link-color: lighten(@brand-primary, 15%);
 
 
 // Typography
@@ -37,8 +50,12 @@
 @navbar-worldskills-height: 100px;
 @navbar-worldskills-padding-vertical: ((@navbar-worldskills-height - @line-height-computed) / 2);
 
+@navbar-worldskills-bg-left: @brand-green-dark;
+@navbar-worldskills-bg-center: @brand-green-light;
+@navbar-worldskills-bg-right: @brand-blue-dark;
+
 @navbar-inverse-color: @gray-lighter;
-@navbar-inverse-bg: @brand-primary;
+@navbar-inverse-bg: @navbar-worldskills-bg-left;
 
 @navbar-inverse-link-color: @gray-lighter;
 
